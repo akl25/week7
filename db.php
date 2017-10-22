@@ -25,7 +25,7 @@ function runQuery($query) {
 		$q->closeCursor();
 		return $results;	
 	} catch (PDOException $e) {
-		http_error("500 Internal Server Error\n\n"."There was a SQL error:\n\n" . $e->getMessage());
+		http_error("500 Internal Server Error\n\n"."There was a SQL error:\n\n" . $e->getMessage()."<br>");
 	}	  
 }
 
